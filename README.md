@@ -16,7 +16,7 @@ React library : Modal
 
 ## Installation
 
-Run :`npm install tlancelle-react-modal`
+Run :`npm install timlancelle-react-modal`
 
 ## How to use this component
 
