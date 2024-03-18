@@ -1,11 +1,47 @@
 # simple-modal-library
 
-A library of React modal created using [`create-modal-lib`](https://www.npmjs.com/package/simple-modal-library-timote).
+## Author
 
-Learn more: https://github.com/LancelleTimote/Projet-n-15-Passer-une-librairie-jQuery-vers-React-plugin-modal.git
+[Timoté Lancelle](https://github.com/LancelleTimote)
+
+## Requirements
+
+- React (version >= 18.2)
+- Npm
+- Editor : Visual Studio code recommended
+
+## Descripton
+
+React library : Modal
 
 ## Installation
 
+Run :`npm install tlancelle-react-modal`
+
+## How to use this component
+
 ```
-npm install simple-modal-library
+import React, { useState } from "react";
+import Modal from "../lib/Modal";
+
+function App() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <div>
+      {isModalOpen && (
+        <Modal
+          message={"Employee Created successfully !"}
+          onClose={handleCloseModal}
+        />
+      )}
+    </div>
+  );
+}
+
+export default App;
 ```
